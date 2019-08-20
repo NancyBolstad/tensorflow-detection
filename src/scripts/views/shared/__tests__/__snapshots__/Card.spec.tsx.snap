@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: inline-block;
+  background: #fff;
+  padding: 36px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+}
+
+<div
+    class="c0"
+  >
+    <p>
+      This content is in Card Component.
+    </p>
+  </div>
+</DocumentFragment>
+`;

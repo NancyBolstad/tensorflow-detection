@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  .c0 {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+<div
+    class="c0"
+    height="64"
+    width="64"
+  >
+    <div
+      style="fill: #fff; height: 64px; width: 64px;"
+    >
+      <svg
+        class="icon-blank"
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      />
+      
+
+    </div>
+  </div>
+</DocumentFragment>
+`;

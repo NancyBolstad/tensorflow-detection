@@ -1,0 +1,83 @@
+{
+  "name": "boilerplate_reactweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --config ./webpack/webpack.config.js --open --progress",
+    "build": "npm run cp:static & webpack --mode production --config ./webpack/webpack.config.js",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "test": "jest --silent",
+    "test:update-snapshot": "jest --updateSnapshot",
+    "cp:static": "cpx './static/**/{*.html,*.jpg,*.png,*.gif,*.mp4,*.mov,*.json,*.eot,*.svg,*.ttf,*.woff}' './dist/static'",
+    "precommit": "lint-staged",
+    "del": "rimraf ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NancyBolstad/tensorflow-detection.git"
+  },
+  "lint-staged": {
+    "src/scripts/**/*.js": [
+      "npm run lint",
+      "git add"
+    ]
+  },
+  "author": "Nancy Bolstad",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@tensorflow-models/posenet": "^1.0.3",
+    "@tensorflow/tfjs": "^1.1.2",
+    "axios": "^0.18.0",
+    "babel-loader": "^8.0.6",
+    "history": "^4.7.2",
+    "react": "^16.8.6",
+    "react-dom": "16.8.6",
+    "react-loading": "^2.0.3",
+    "styled-components": "^4.1.3",
+    "styled-reset": "^1.6.4",
+    "universal-router": "^8.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.6.1",
+    "@hot-loader/react-dom": "^16.8.6",
+    "@types/axios": "^0.14.0",
+    "@types/history": "^4.7.2",
+    "@types/jest": "^24.0.13",
+    "@types/react": "^16.8.18",
+    "@types/react-dom": "^16.8.4",
+    "@types/styled-components": "^4.1.4",
+    "@types/universal-router": "^8.0.0",
+    "acorn": "^6.1.1",
+    "cpx": "^1.5.0",
+    "eslint": "^5.16.0",
+    "eslint-config-teppeis": "^9.6.0",
+    "eslint-plugin-jest": "^22.6.4",
+    "eslint-plugin-react": "^7.13.0",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^1.2.1",
+    "jest": "^24.8.0",
+    "jest-dom": "^3.4.0",
+    "jest-localstorage-mock": "^2.4.0",
+    "jest-styled-components": "^6.3.1",
+    "lint-staged": "^8.1.0",
+    "npm-run-all": "^4.1.5",
+    "opn-cli": "^4.0.0",
+    "prettier": "^1.17.1",
+    "progress-bar-webpack-plugin": "^1.12.1",
+    "react-hot-loader": "^4.8.8",
+    "react-testing-library": "^7.0.1",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.5",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
+  }
+}
