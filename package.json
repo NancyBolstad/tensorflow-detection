@@ -11,7 +11,9 @@
     "test:update-snapshot": "jest --updateSnapshot",
     "cp:static": "cpx './static/**/{*.html,*.jpg,*.png,*.gif,*.mp4,*.mov,*.json,*.eot,*.svg,*.ttf,*.woff}' './dist/static'",
     "precommit": "lint-staged",
-    "del": "rimraf ./dist"
+    "del": "rimraf ./dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
   },
   "author": "Nancy Bolstad",
   "license": "MIT",
+  "homepage": "https://github.com/NancyBolstad/tensorflow-detection",
   "dependencies": {
     "@babel/core": "^7.4.5",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
@@ -34,6 +37,7 @@
     "@babel/preset-typescript": "^7.3.3",
     "@tensorflow-models/posenet": "^1.0.3",
     "@tensorflow/tfjs": "^1.1.2",
+    "@types/gh-pages": "^2.0.0",
     "axios": "^0.18.0",
     "babel-loader": "^8.0.6",
     "history": "^4.7.2",
