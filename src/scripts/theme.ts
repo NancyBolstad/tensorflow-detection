@@ -1,6 +1,6 @@
 export const theme = {
-  lightBackground: 'linear-gradient(to right, #eef2f3, #8e9eab)',
-  darkBackground: 'linear-gradient(to right, #734b6d, #42275a)',
+  lightBackground: 'linear-gradient(to right, #734b6d, #42275a)',
+  darkBackground: 'linear-gradient(to right, #eef2f3, #8e9eab)',
 };
 
 const size = {
