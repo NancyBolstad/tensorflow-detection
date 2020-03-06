@@ -2,6 +2,8 @@
 
 Real time eye detection
 
+Live: https://look-at-me.netlify.com/
+
 ## Usage
 
 ```zsh
