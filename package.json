@@ -1,7 +1,15 @@
 {
-  "name": "boilerplate_reactweb",
+  "name": "tensorflow-detection-react",
   "version": "1.0.1",
-  "description": "",
+  "author": "Nancy Bolstad",
+  "license": "MIT",
+  "description": "Real-Time eye movement detection with TensorFlow.js, React and TypeScript",
+  "keywords": [
+    "React",
+    "TensorFlow",
+    "TypeScript",
+    "Machine Learning"
+  ],
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --config ./webpack/webpack.config.js --open --progress",
@@ -25,8 +33,6 @@
       "git add"
     ]
   },
-  "author": "Nancy Bolstad",
-  "license": "MIT",
   "homepage": "https://github.com/NancyBolstad/tensorflow-detection",
   "dependencies": {
     "@babel/core": "^7.4.5",
